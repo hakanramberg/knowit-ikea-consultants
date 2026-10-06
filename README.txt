@@ -18,7 +18,7 @@ Only Imran Zunzani's profile includes a Comment section, after Selected previous
 Expert rate badges appear on consultant cards and in View profile. In worksheet RFX - IKEA (2), a 1 in column E (Expert, som senior) gives a silver Normally Expert rate badge; a 1 in column F (Expert rate) gives a gold Required Expert rate badge. Five consultants have a silver badge and two have a gold badge. Both badges are shown if both columns contain a 1.
 
 Titles and competences
-Every displayed title comes from the heading at the top of the consultant’s submitted CV, including any additional title line. Cedrik Aagaard’s heading is Senior Software Engineer. Fredrik Norrman’s heading is Senior Software & AI Engineer. No frontend or backend role labels or area filters are used.
+Every displayed title comes from the heading at the top of the consultant’s submitted CV, including any additional title line. Cedrik Aagaard’s heading is Senior Software Engineer. Fredrik Norrman’s heading is Senior Software Engineer. No frontend or backend role labels or area filters are used.
 
 Required competences: Cloud, Azure services, CI/CD, Oracle, PL/SQL, React, .NET, Postgres, Java, Terraform, GitHub Actions, AI/LLM knowledgeable, Next.js, Angular and Typescript. The profile view includes competences described in projects or listed in the CV, all shown with the same filled purple dot.
 

@@ -1996,7 +1996,7 @@ window.KNOWIT_CONSULTANTS = [
   {
     "id": "C23",
     "name": "Fredrik Norrman",
-    "role": "Senior Software & AI Engineer",
+    "role": "Senior Software Engineer",
     "summary": "Software and AI engineer with C#/.NET, Azure and enterprise integration experience. Uses coding agents and automation for investigation, implementation, testing and review, with responsibility from customer requirements through deployment and production verification.",
     "clients": "Omegapoint and Aliquam Consulting",
     "rfxSkills": [
@@ -2064,14 +2064,14 @@ window.KNOWIT_CONSULTANTS = [
     "normallyExpertRate": false,
     "requiredExpertRate": false,
     "slug": "fredrik-norrman",
-    "cv": "cv/fredrik-norrman.pdf",
-    "cvName": "Knowit_Fredrik Norrman_Senior_Software_Engineer_Jan.pdf",
-    "cvFormat": "PDF",
-    "cvBytes": 175029,
-    "portrait": "portraits/fredrik-norrman.jpg",
+    "cv": "cv/fredrik-norrman.docx",
+    "cvName": "Knowit Fredrik Norrman Senior Software Engineer.docx",
+    "cvFormat": "DOCX",
+    "cvBytes": 352413,
+    "portrait": "portraits/fredrik-norrman.png",
     "titleSource": {
-      "file": "Knowit_Fredrik Norrman_Senior_Software_Engineer_Jan.pdf",
-      "location": "CV heading on first page"
+      "file": "Knowit Fredrik Norrman Senior Software Engineer.docx",
+      "location": "CV heading at the top of the first page"
     }
   },
   {
