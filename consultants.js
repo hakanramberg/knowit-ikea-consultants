@@ -86,8 +86,8 @@ window.KNOWIT_CONSULTANTS = [
     "id": "C01",
     "slug": "cedrik-aagaard",
     "name": "Cedrik Aagaard",
-    "role": "Software Engineer",
-    "summary": "Software engineer with experience as CTO and technical owner of a launched product. Combines React, TypeScript and service development with product ownership, integrations and applied AI.",
+    "role": "Senior Software Engineer",
+    "summary": "Software engineer with experience as CTO and sole technical owner of a launched product. Combines TypeScript, React, .NET and PostgreSQL with integrations, AI features and ownership from architecture through deployment.",
     "tags": [
       "Cloud",
       "Azure services",
@@ -152,10 +152,10 @@ window.KNOWIT_CONSULTANTS = [
     ],
     "clients": "Travat, Apple and Estable",
     "portrait": "portraits/cedrik-aagaard.jpg",
-    "cv": "cv/cedrik-aagaard.docx",
-    "cvName": "Cedrik Aagaard Software Engineer.docx",
-    "cvFormat": "DOCX",
-    "cvBytes": 280289,
+    "cv": "cv/cedrik-aagaard.pdf",
+    "cvName": "Knowit_Cedrik_Aagaard_Senior_Software Engineer_Jan.pdf",
+    "cvFormat": "PDF",
+    "cvBytes": 145104,
     "availabilityMonth": "2026-11",
     "availabilityLabel": "November 2026",
     "availabilitySource": {
@@ -164,8 +164,8 @@ window.KNOWIT_CONSULTANTS = [
       "cell": "D12"
     },
     "titleSource": {
-      "file": "Cedrik Aagaard Software Engineer.docx",
-      "location": "CV heading"
+      "file": "Knowit_Cedrik_Aagaard_Senior_Software Engineer_Jan.pdf",
+      "location": "CV heading on first page"
     },
     "competenceIds": [
       "cloud",
@@ -1992,5 +1992,272 @@ window.KNOWIT_CONSULTANTS = [
     ],
     "normallyExpertRate": false,
     "requiredExpertRate": false
+  },
+  {
+    "id": "C23",
+    "name": "Fredrik Norrman",
+    "role": "Senior Software & AI Engineer",
+    "summary": "Software and AI engineer with C#/.NET, Azure and enterprise integration experience. Uses coding agents and automation for investigation, implementation, testing and review, with responsibility from customer requirements through deployment and production verification.",
+    "clients": "Omegapoint and Aliquam Consulting",
+    "rfxSkills": [
+      {
+        "id": "cloud",
+        "name": "Cloud",
+        "evidence": "project"
+      },
+      {
+        "id": "az",
+        "name": "Azure services",
+        "evidence": "project"
+      },
+      {
+        "id": "cicd",
+        "name": "CI/CD",
+        "evidence": "project"
+      },
+      {
+        "id": "net",
+        "name": ".NET",
+        "evidence": "project"
+      },
+      {
+        "id": "ai",
+        "name": "AI/LLM knowledgeable",
+        "evidence": "project"
+      },
+      {
+        "id": "ts",
+        "name": "Typescript",
+        "evidence": "mentioned"
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Azure services",
+      "CI/CD",
+      ".NET",
+      "AI/LLM knowledgeable",
+      "Typescript"
+    ],
+    "allTags": [
+      "Cloud",
+      "Azure services",
+      "CI/CD",
+      ".NET",
+      "AI/LLM knowledgeable",
+      "Typescript"
+    ],
+    "competenceIds": [
+      "cloud",
+      "az",
+      "cicd",
+      "net",
+      "ai",
+      "ts"
+    ],
+    "availabilityMonth": "2027-01",
+    "availabilityLabel": "January 2027",
+    "availabilitySource": {
+      "source": "User confirmation",
+      "date": "2026-10-06"
+    },
+    "normallyExpertRate": false,
+    "requiredExpertRate": false,
+    "slug": "fredrik-norrman",
+    "cv": "cv/fredrik-norrman.pdf",
+    "cvName": "Knowit_Fredrik Norrman_Senior_Software_Engineer_Jan.pdf",
+    "cvFormat": "PDF",
+    "cvBytes": 175029,
+    "portrait": "portraits/fredrik-norrman.jpg",
+    "titleSource": {
+      "file": "Knowit_Fredrik Norrman_Senior_Software_Engineer_Jan.pdf",
+      "location": "CV heading on first page"
+    }
+  },
+  {
+    "id": "C24",
+    "name": "Nina Kristensson",
+    "role": "Senior Software Engineer",
+    "summary": "Software engineer with extensive data engineering and architecture experience across Azure, AWS and GCP. Builds ETL pipelines, cloud platforms and C#/Java services, with strong Oracle/PL/SQL, data modelling and migration experience.",
+    "clients": "E.ON, Ikano Bank, Human IT and JP Morgan",
+    "rfxSkills": [
+      {
+        "id": "cloud",
+        "name": "Cloud",
+        "evidence": "project"
+      },
+      {
+        "id": "az",
+        "name": "Azure services",
+        "evidence": "project"
+      },
+      {
+        "id": "cicd",
+        "name": "CI/CD",
+        "evidence": "project"
+      },
+      {
+        "id": "oracle",
+        "name": "Oracle",
+        "evidence": "project"
+      },
+      {
+        "id": "plsql",
+        "name": "PL/SQL",
+        "evidence": "project"
+      },
+      {
+        "id": "net",
+        "name": ".NET",
+        "evidence": "project"
+      },
+      {
+        "id": "java",
+        "name": "Java",
+        "evidence": "project"
+      },
+      {
+        "id": "terraform",
+        "name": "Terraform",
+        "evidence": "project"
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Azure services",
+      "CI/CD",
+      "Oracle",
+      "PL/SQL",
+      ".NET",
+      "Java",
+      "Terraform"
+    ],
+    "allTags": [
+      "Cloud",
+      "Azure services",
+      "CI/CD",
+      "Oracle",
+      "PL/SQL",
+      ".NET",
+      "Java",
+      "Terraform"
+    ],
+    "competenceIds": [
+      "cloud",
+      "az",
+      "cicd",
+      "oracle",
+      "plsql",
+      "net",
+      "java",
+      "terraform"
+    ],
+    "availabilityMonth": "2027-01",
+    "availabilityLabel": "January 2027",
+    "availabilitySource": {
+      "source": "User confirmation",
+      "date": "2026-10-06"
+    },
+    "normallyExpertRate": false,
+    "requiredExpertRate": false,
+    "slug": "nina-kristensson",
+    "cv": "cv/nina-kristensson.pdf",
+    "cvName": "Knowit_Nina_Kristensson_Senior_Software_Engineer_Jan.pdf",
+    "cvFormat": "PDF",
+    "cvBytes": 175890,
+    "portrait": "portraits/nina-kristensson.jpg",
+    "titleSource": {
+      "file": "Knowit_Nina_Kristensson_Senior_Software_Engineer_Jan.pdf",
+      "location": "CV heading on first page"
+    }
+  },
+  {
+    "id": "C25",
+    "name": "Jimmie Ulenius",
+    "role": "Senior Software Engineer",
+    "summary": "Software engineer and technical lead specialising in .NET, Azure and integrations. Has led architecture and delivery at Region Skåne and E.ON, with infrastructure as code, CI/CD, Terraform and GitHub Actions experience.",
+    "clients": "Region Skåne, E.ON, Visma Draftit, Fordonsdata Nordic and Kjell & Company",
+    "rfxSkills": [
+      {
+        "id": "cloud",
+        "name": "Cloud",
+        "evidence": "project"
+      },
+      {
+        "id": "az",
+        "name": "Azure services",
+        "evidence": "project"
+      },
+      {
+        "id": "cicd",
+        "name": "CI/CD",
+        "evidence": "project"
+      },
+      {
+        "id": "react",
+        "name": "React",
+        "evidence": "project"
+      },
+      {
+        "id": "net",
+        "name": ".NET",
+        "evidence": "project"
+      },
+      {
+        "id": "terraform",
+        "name": "Terraform",
+        "evidence": "project"
+      },
+      {
+        "id": "gha",
+        "name": "GitHub Actions",
+        "evidence": "project"
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Azure services",
+      "CI/CD",
+      "React",
+      ".NET",
+      "Terraform",
+      "GitHub Actions"
+    ],
+    "allTags": [
+      "Cloud",
+      "Azure services",
+      "CI/CD",
+      "React",
+      ".NET",
+      "Terraform",
+      "GitHub Actions"
+    ],
+    "competenceIds": [
+      "cloud",
+      "az",
+      "cicd",
+      "react",
+      "net",
+      "terraform",
+      "gha"
+    ],
+    "availabilityMonth": "2027-01",
+    "availabilityLabel": "January 2027",
+    "availabilitySource": {
+      "source": "User confirmation",
+      "date": "2026-10-06"
+    },
+    "normallyExpertRate": false,
+    "requiredExpertRate": false,
+    "slug": "jimmie-ulenius",
+    "cv": "cv/jimmie-ulenius.pdf",
+    "cvName": "Knoiwt_Jimmie_Ulenius_Senior_Software_Engineer.pdf",
+    "cvFormat": "PDF",
+    "cvBytes": 190720,
+    "portrait": "portraits/jimmie-ulenius.jpg",
+    "titleSource": {
+      "file": "Knoiwt_Jimmie_Ulenius_Senior_Software_Engineer.pdf",
+      "location": "CV heading on first page"
+    }
   }
 ];
