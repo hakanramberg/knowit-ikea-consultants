@@ -57,9 +57,9 @@ window.KNOWIT_CONSULTANTS = [
     "clients": "IKEA, Sony and Transdev",
     "portrait": "portraits/alexander-munck-af-rosenschold.jpg",
     "cv": "cv/alexander-munck-af-rosenschold.pdf",
-    "cvName": "Knowit_Alexander_Munckafrosenschöld_Senior_Software_Engineer_immediately.pdf",
+    "cvName": "Knowit_Alexander_Munck_af_rosenschöld_Senior_Software_Engineer_Oct.pdf",
     "cvFormat": "PDF",
-    "cvBytes": 136932,
+    "cvBytes": 136913,
     "availabilityMonth": "2026-11",
     "availabilityLabel": "November 2026",
     "availabilitySource": {
@@ -68,7 +68,7 @@ window.KNOWIT_CONSULTANTS = [
       "cell": "D5"
     },
     "titleSource": {
-      "file": "Knowit_Alexander_Munckafrosenschöld_Senior_Software_Engineer_immediately.pdf",
+      "file": "Knowit_Alexander_Munck_af_rosenschöld_Senior_Software_Engineer_Oct.pdf",
       "location": "CV heading on first page"
     },
     "competenceIds": [
@@ -1175,10 +1175,10 @@ window.KNOWIT_CONSULTANTS = [
     ],
     "clients": "Inter IKEA and Kentima",
     "portrait": null,
-    "cv": "cv/jacob-wikmark.docx",
-    "cvName": "Saknar_Bild_Knowit_Jacob_Wikmark_Senior_Software_Engineer.docx",
-    "cvFormat": "DOCX",
-    "cvBytes": 28795,
+    "cv": "cv/jacob-wikmark.pdf",
+    "cvName": "Knowit_Jacob_Wikmark_Senior_Software_Engineer.pdf",
+    "cvFormat": "PDF",
+    "cvBytes": 118097,
     "availabilityMonth": "2026-12",
     "availabilityLabel": "December 2026",
     "availabilitySource": {
@@ -1187,8 +1187,8 @@ window.KNOWIT_CONSULTANTS = [
       "cell": "D16"
     },
     "titleSource": {
-      "file": "Saknar_Bild_Knowit_Jacob_Wikmark_Senior_Software_Engineer.docx",
-      "location": "CV heading"
+      "file": "Knowit_Jacob_Wikmark_Senior_Software_Engineer.pdf",
+      "location": "CV heading on first page"
     },
     "competenceIds": [
       "cloud",
