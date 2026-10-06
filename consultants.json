@@ -2158,7 +2158,7 @@
       "date": "2026-10-06"
     },
     "normallyExpertRate": false,
-    "requiredExpertRate": false,
+    "requiredExpertRate": true,
     "slug": "nina-kristensson",
     "cv": "cv/nina-kristensson.pdf",
     "cvName": "Knowit_Nina_Kristensson_Senior_Software_Engineer_Jan.pdf",

@@ -15,7 +15,7 @@ Select Download all CVs to download all 25 original CVs together in Knowit_IKEA_
 
 Only Imran Zunzani's profile includes a Comment section, after Selected previous clients, with the requested text: Ongoing assignment at Range operations.
 
-Expert rate badges appear on consultant cards and in View profile. In worksheet RFX - IKEA (2), a 1 in column E (Expert, som senior) gives a silver Normally Expert rate badge; a 1 in column F (Expert rate) gives a gold Required Expert rate badge. Five consultants have a silver badge and two have a gold badge. Both badges are shown if both columns contain a 1.
+Expert rate badges appear on consultant cards and in View profile. In worksheet RFX - IKEA (2), a 1 in column E (Expert, som senior) gives a silver Normally Expert rate badge; a 1 in column F (Expert rate) gives a gold Required Expert rate badge. Five consultants have a silver badge and three have a gold badge. Nina Kristensson has a gold Required Expert rate badge as requested. Both badges are shown if both columns contain a 1.
 
 Titles and competences
 Every displayed title comes from the heading at the top of the consultant’s submitted CV, including any additional title line. Cedrik Aagaard’s heading is Senior Software Engineer. Fredrik Norrman’s heading is Senior Software Engineer. No frontend or backend role labels or area filters are used.
