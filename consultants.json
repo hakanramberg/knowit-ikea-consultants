@@ -2063,13 +2063,13 @@
     "normallyExpertRate": false,
     "requiredExpertRate": false,
     "slug": "fredrik-norrman",
-    "cv": "cv/fredrik-norrman.docx",
-    "cvName": "Knowit Fredrik Norrman Senior Software Engineer.docx",
-    "cvFormat": "DOCX",
-    "cvBytes": 352413,
+    "cv": "cv/fredrik-norrman.pdf",
+    "cvName": "Knowit Fredrik Norrman Senior Software Engineer.pdf",
+    "cvFormat": "PDF",
+    "cvBytes": 175018,
     "portrait": "portraits/fredrik-norrman.png",
     "titleSource": {
-      "file": "Knowit Fredrik Norrman Senior Software Engineer.docx",
+      "file": "Knowit Fredrik Norrman Senior Software Engineer.pdf",
       "location": "CV heading at the top of the first page"
     }
   },
