@@ -1,4 +1,4 @@
-KNOWIT – CONSULTANTS FOR IKEA RANGE OPERATIONS
+KNOWIT – CONSULTANTS FOR IKEA RANGE OPERATIONS.
 
 Open the website
 1. Extract the entire ZIP file into a folder on your computer.
