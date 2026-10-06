@@ -241,7 +241,7 @@ window.KNOWIT_CONSULTANTS = [
         "evidence": "project"
       }
     ],
-    "clients": "IKEA, Alfa Laval and Additude",
+    "clients": "IKEA, Alfa Laval and Pinteg",
     "portrait": "portraits/david-dumitru.jpg",
     "cv": "cv/david-dumitru.pdf",
     "cvName": "Knowit_David_Dumitru_Software engineer_immediately.pdf",
