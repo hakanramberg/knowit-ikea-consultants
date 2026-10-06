@@ -7,7 +7,7 @@ Open the website
 The website works offline and requires no installation. Keep the folder structure intact so that portraits and CV downloads continue to work.
 
 Contents
-25 consultant profiles, 24 portraits and all 25 original CVs. Jacob Wikmark’s submitted CV does not contain a photo; his profile shows initials.
+25 consultant profiles, 25 portraits and all 25 original CVs.
 
 Search by consultant name or previous client. The competence filter contains only the 15 competences requested by IKEA in the supplied image. Select View profile for the full summary and Download CV for the original document.
 
