@@ -22,7 +22,11 @@
   }
   function badgeLabel(person, today = todayKey()) {
     const date = addedDate(person, today);
-    return date ? date === today ? 'Added today' : `Added ${formatDate(date)}` : '';
+    if (!date) return '';
+    const day = Number(date.slice(8));
+    const suffix = day >= 11 && day <= 13 ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' }[day % 10] || 'th');
+    const month = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Stockholm', month: 'short' }).format(new Date(`${date}T12:00:00Z`));
+    return `Submitted ${month} ${day}${suffix}`;
   }
   const crcTable = Uint32Array.from({ length: 256 }, (_, value) => {
     for (let bit = 0; bit < 8; bit++) value = value & 1 ? 0xedb88320 ^ (value >>> 1) : value >>> 1;
