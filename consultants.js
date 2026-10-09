@@ -2677,5 +2677,225 @@ window.KNOWIT_CONSULTANTS = [
     "normallyExpertRate": false,
     "requiredExpertRate": true,
     "addedOn": "2026-10-09"
+  },
+  {
+    "id": "C31",
+    "slug": "hesam-rasouli",
+    "name": "Hesam Rasouli",
+    "role": "Senior Software Engineer",
+    "summary": "Software engineer and system architect with experience in cloud-native systems, microservices and performance optimisation. Has developed IKEA planning and range-management solutions using Node.js, TypeScript, React, AWS, Azure and GCP, with additional experience in Java, .NET, Terraform and AI-assisted development.",
+    "tags": [
+      "Cloud",
+      "Azure services",
+      "CI/CD",
+      "React",
+      ".NET",
+      "Postgres",
+      "Java",
+      "Terraform",
+      "GitHub Actions",
+      "AI/LLM knowledgeable",
+      "Typescript"
+    ],
+    "allTags": [
+      "Cloud",
+      "Azure services",
+      "CI/CD",
+      "React",
+      ".NET",
+      "Postgres",
+      "Java",
+      "Terraform",
+      "GitHub Actions",
+      "AI/LLM knowledgeable",
+      "Typescript"
+    ],
+    "rfxSkills": [
+      {
+        "id": "cloud",
+        "name": "Cloud",
+        "evidence": "project"
+      },
+      {
+        "id": "az",
+        "name": "Azure services",
+        "evidence": "project"
+      },
+      {
+        "id": "cicd",
+        "name": "CI/CD",
+        "evidence": "mentioned"
+      },
+      {
+        "id": "react",
+        "name": "React",
+        "evidence": "project"
+      },
+      {
+        "id": "net",
+        "name": ".NET",
+        "evidence": "project"
+      },
+      {
+        "id": "postgres",
+        "name": "Postgres",
+        "evidence": "project"
+      },
+      {
+        "id": "java",
+        "name": "Java",
+        "evidence": "project"
+      },
+      {
+        "id": "terraform",
+        "name": "Terraform",
+        "evidence": "project"
+      },
+      {
+        "id": "gha",
+        "name": "GitHub Actions",
+        "evidence": "project"
+      },
+      {
+        "id": "ai",
+        "name": "AI/LLM knowledgeable",
+        "evidence": "project"
+      },
+      {
+        "id": "ts",
+        "name": "Typescript",
+        "evidence": "project"
+      }
+    ],
+    "clients": "IKEA, Blocket, Tecnotree, Asan Pardakht and Digikala",
+    "portrait": "portraits/hesam-rasouli.jpg",
+    "cv": "cv/hesam-rasouli.pdf",
+    "cvName": "Knowit_Hesam_Rasouli_Senior_Software_Engineer_Jan.pdf",
+    "cvFormat": "PDF",
+    "cvBytes": 151324,
+    "availabilityMonth": "2027-01",
+    "availabilityLabel": "January 2027",
+    "availabilitySource": {
+      "source": "User confirmation",
+      "date": "2026-10-09"
+    },
+    "titleSource": {
+      "file": "Knowit_Hesam_Rasouli_Senior_Software_Engineer_Jan.pdf",
+      "location": "CV heading on first page"
+    },
+    "competenceIds": [
+      "cloud",
+      "az",
+      "cicd",
+      "react",
+      "net",
+      "postgres",
+      "java",
+      "terraform",
+      "gha",
+      "ai",
+      "ts"
+    ],
+    "normallyExpertRate": false,
+    "requiredExpertRate": false,
+    "addedOn": "2026-10-09"
+  },
+  {
+    "id": "C32",
+    "slug": "petter-norrman",
+    "name": "Petter Norrman",
+    "role": "Senior Software Engineer",
+    "summary": "Software engineer with extensive IKEA experience in global product-information APIs, cloud platforms and data integration. Combines Go and Java development with AWS and GCP, Terraform and CI/CD, including event-driven services, PostgreSQL and enterprise data transformation using dbt.",
+    "tags": [
+      "Cloud",
+      "CI/CD",
+      "Oracle",
+      "PL/SQL",
+      "Postgres",
+      "Java",
+      "Terraform",
+      "GitHub Actions"
+    ],
+    "allTags": [
+      "Cloud",
+      "CI/CD",
+      "Oracle",
+      "PL/SQL",
+      "Postgres",
+      "Java",
+      "Terraform",
+      "GitHub Actions"
+    ],
+    "rfxSkills": [
+      {
+        "id": "cloud",
+        "name": "Cloud",
+        "evidence": "project"
+      },
+      {
+        "id": "cicd",
+        "name": "CI/CD",
+        "evidence": "project"
+      },
+      {
+        "id": "oracle",
+        "name": "Oracle",
+        "evidence": "project"
+      },
+      {
+        "id": "plsql",
+        "name": "PL/SQL",
+        "evidence": "project"
+      },
+      {
+        "id": "postgres",
+        "name": "Postgres",
+        "evidence": "project"
+      },
+      {
+        "id": "java",
+        "name": "Java",
+        "evidence": "project"
+      },
+      {
+        "id": "terraform",
+        "name": "Terraform",
+        "evidence": "project"
+      },
+      {
+        "id": "gha",
+        "name": "GitHub Actions",
+        "evidence": "project"
+      }
+    ],
+    "clients": "IKEA, Sony, Stockholms Lokaltrafik, Bergendahlsgruppen and CDON",
+    "portrait": "portraits/petter-norrman.jpg",
+    "cv": "cv/petter-norrman.pdf",
+    "cvName": "Knowit_Petter_Norrman_Senior_Software_Engineer_jan.pdf",
+    "cvFormat": "PDF",
+    "cvBytes": 144001,
+    "availabilityMonth": "2027-01",
+    "availabilityLabel": "January 2027",
+    "availabilitySource": {
+      "source": "User confirmation",
+      "date": "2026-10-09"
+    },
+    "titleSource": {
+      "file": "Knowit_Petter_Norrman_Senior_Software_Engineer_jan.pdf",
+      "location": "CV heading on first page"
+    },
+    "competenceIds": [
+      "cloud",
+      "cicd",
+      "oracle",
+      "plsql",
+      "postgres",
+      "java",
+      "terraform",
+      "gha"
+    ],
+    "normallyExpertRate": false,
+    "requiredExpertRate": false,
+    "addedOn": "2026-10-09"
   }
 ];
