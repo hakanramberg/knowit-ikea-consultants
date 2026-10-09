@@ -2897,5 +2897,127 @@ window.KNOWIT_CONSULTANTS = [
     "normallyExpertRate": false,
     "requiredExpertRate": false,
     "addedOn": "2026-10-09"
+  },
+  {
+    "id": "C33",
+    "slug": "magnus-anvin",
+    "name": "Magnus Anvin",
+    "role": "Senior Software Engineer",
+    "summary": "Software engineer with extensive experience in system integration and modernising IKEA systems into microservices and event-driven solutions. Combines Java, Kotlin, TypeScript and Node.js development with GCP and AWS, Terraform, GitHub Actions and practical AI-agent workflows.",
+    "tags": [
+      "Cloud",
+      "CI/CD",
+      "Oracle",
+      "React",
+      ".NET",
+      "Postgres",
+      "Java",
+      "Terraform",
+      "GitHub Actions",
+      "AI/LLM knowledgeable",
+      "Typescript"
+    ],
+    "allTags": [
+      "Cloud",
+      "CI/CD",
+      "Oracle",
+      "React",
+      ".NET",
+      "Postgres",
+      "Java",
+      "Terraform",
+      "GitHub Actions",
+      "AI/LLM knowledgeable",
+      "Typescript"
+    ],
+    "rfxSkills": [
+      {
+        "id": "cloud",
+        "name": "Cloud",
+        "evidence": "project"
+      },
+      {
+        "id": "cicd",
+        "name": "CI/CD",
+        "evidence": "project"
+      },
+      {
+        "id": "oracle",
+        "name": "Oracle",
+        "evidence": "mentioned"
+      },
+      {
+        "id": "react",
+        "name": "React",
+        "evidence": "project"
+      },
+      {
+        "id": "net",
+        "name": ".NET",
+        "evidence": "project"
+      },
+      {
+        "id": "postgres",
+        "name": "Postgres",
+        "evidence": "project"
+      },
+      {
+        "id": "java",
+        "name": "Java",
+        "evidence": "project"
+      },
+      {
+        "id": "terraform",
+        "name": "Terraform",
+        "evidence": "project"
+      },
+      {
+        "id": "gha",
+        "name": "GitHub Actions",
+        "evidence": "project"
+      },
+      {
+        "id": "ai",
+        "name": "AI/LLM knowledgeable",
+        "evidence": "project"
+      },
+      {
+        "id": "ts",
+        "name": "Typescript",
+        "evidence": "project"
+      }
+    ],
+    "clients": "IKEA, H&M, Sony Ericsson, E.ON and Telenor",
+    "portrait": "portraits/magnus-anvin.jpg",
+    "cv": "cv/magnus-anvin.pdf",
+    "cvName": "Knowit_Senior_Software_Engineer_Magnus_Anvin_Expert_Jan.pdf",
+    "cvFormat": "PDF",
+    "cvBytes": 132319,
+    "availabilityMonth": "2027-01",
+    "availabilityLabel": "January 2027",
+    "availabilitySource": {
+      "source": "User confirmation",
+      "date": "2026-10-09"
+    },
+    "titleSource": {
+      "file": "Knowit_Senior_Software_Engineer_Magnus_Anvin_Expert_Jan.pdf",
+      "location": "CV heading on first page"
+    },
+    "competenceIds": [
+      "cloud",
+      "cicd",
+      "oracle",
+      "react",
+      "net",
+      "postgres",
+      "java",
+      "terraform",
+      "gha",
+      "ai",
+      "ts"
+    ],
+    "normallyExpertRate": false,
+    "requiredExpertRate": true,
+    "addedOn": "2026-10-09"
   }
 ];
