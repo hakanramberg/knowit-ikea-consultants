@@ -5,7 +5,8 @@ const icons = {
   arrow: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>',
   calendar: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4m8-4v4M4 10h16m-11 4h2m4 0h2m-8 3h2"/></svg>'
 };
-const state = { consultants: [], query: '', technology: '' };
+const state = { consultants: [], query: '', technology: '', onlyNew: false, newGroup: null };
+const additions = window.KNOWIT_NEW_PROFILES;
 const search = document.querySelector('#search');
 const technology = document.querySelector('#technology');
 const grid = document.querySelector('#consultant-grid');
@@ -33,6 +34,7 @@ function rateBadges(person) {
 
 function card(person) {
   return `<article class="consultant-card" data-id="${esc(person.id)}">
+    ${addedBadge(person)}
     <div class="card-head">${portrait(person)}<div class="card-identity"><h3>${esc(person.name)}</h3><p class="role">${esc(person.role)}</p></div></div>
     <p class="availability-badge">${icons.calendar}<span>Available <strong>${esc(person.availabilityLabel)}</strong></span></p>
     ${rateBadges(person)}
@@ -43,8 +45,10 @@ function card(person) {
 }
 
 function renderResults() {
+  renderNewProfiles();
   const queryTerms = normalize(state.query.trim()).split(/\s+/).filter(Boolean);
   const filtered = state.consultants.filter(person => {
+    if (state.onlyNew && !state.newGroup?.people.some(item => item.id === person.id)) return false;
     if (state.technology && !person.competenceIds.includes(state.technology)) return false;
     const text = normalize([person.name, person.role, person.clients, person.availabilityLabel].join(' '));
     return queryTerms.every(term => text.includes(term));
@@ -56,11 +60,11 @@ function renderResults() {
   }).join('');
   document.querySelector('#results-count').innerHTML = `Showing <strong>${filtered.length}</strong> of ${state.consultants.length} consultants`;
   document.querySelector('#empty-state').hidden = filtered.length > 0;
-  document.querySelector('#reset').hidden = !state.query && !state.technology;
+  document.querySelector('#reset').hidden = !state.query && !state.technology && !state.onlyNew;
 }
 
 function resetFilters() {
-  state.query = ''; state.technology = '';
+  state.query = ''; state.technology = ''; state.onlyNew = false;
   search.value = ''; technology.value = '';
   renderResults();
 }
@@ -68,9 +72,11 @@ function resetFilters() {
 function openProfile(id) {
   const person = state.consultants.find(item => item.id === id);
   if (!person) return;
+  state.profileId = id;
   const fileSize = person.cvBytes > 1048576 ? `${(person.cvBytes / 1048576).toLocaleString('en-GB', { maximumFractionDigits: 1 })} MB` : `${Math.ceil(person.cvBytes / 1024)} kB`;
   document.querySelector('#profile-content').innerHTML = `
     <div class="profile-header">${portrait(person)}<div><h2 id="profile-name">${esc(person.name)}</h2><p class="role">${esc(person.role)}</p></div></div>
+    ${addedBadge(person)}
     <div class="profile-availability">${icons.calendar}<div><span>Available from</span><strong>${esc(person.availabilityLabel)}</strong></div></div>
     ${rateBadges(person)}
     <p class="profile-summary">${esc(person.summary)}</p>
@@ -133,6 +139,7 @@ async function init() {
     await loadOfflineDownloads();
     if (!Array.isArray(window.KNOWIT_CONSULTANTS) || !Array.isArray(window.KNOWIT_RFX_COMPETENCES)) throw new Error('Could not load profiles');
     state.consultants = [...window.KNOWIT_CONSULTANTS].sort((a, b) => a.availabilityMonth.localeCompare(b.availabilityMonth) || a.name.localeCompare(b.name, 'sv'));
+    document.querySelector('#hero-description').textContent = `${state.consultants.length} consultants for your next step. Explore their experience, check availability and download their original CVs.`;
     const months = [...new Set(state.consultants.map(person => person.availabilityMonth))];
     document.querySelector('#availability-overview').innerHTML = months.map(month => {
       const group = state.consultants.filter(person => person.availabilityMonth === month);
@@ -146,3 +153,82 @@ async function init() {
   }
 }
 init();
+
+function addedBadge(person) {
+  const label = additions.badgeLabel(person);
+  return label ? `<p class="added-badge"><span aria-hidden="true">●</span>${esc(label)}</p>` : '';
+}
+
+function renderNewProfiles() {
+  state.newGroup = additions.latestGroup(state.consultants);
+  document.querySelector('#new-profiles').hidden = !state.newGroup;
+  if (!state.newGroup) { state.onlyNew = false; return; }
+  const { date, people } = state.newGroup;
+  const when = date === additions.todayKey() ? `today, ${additions.formatDate(date)}` : additions.formatDate(date);
+  document.querySelector('#new-profiles-description').textContent = `${people.length} ${people.length === 1 ? 'consultant' : 'consultants'} added ${when}`;
+  const button = document.querySelector('#show-new-profiles');
+  button.setAttribute('aria-pressed', String(state.onlyNew));
+  button.textContent = state.onlyNew ? 'Show all profiles' : 'View new profiles';
+}
+
+document.querySelector('#show-new-profiles').addEventListener('click', () => {
+  const showNew = !state.onlyNew;
+  state.query = ''; state.technology = ''; state.onlyNew = showNew;
+  search.value = ''; technology.value = '';
+  renderResults();
+  grid.focus({ preventScroll: true });
+});
+
+document.querySelector('#download-new-cvs').addEventListener('click', async () => {
+  const group = additions.latestGroup(state.consultants);
+  if (!group) return;
+  const button = document.querySelector('#download-new-cvs');
+  const status = document.querySelector('#new-download-status');
+  button.disabled = true;
+  button.setAttribute('aria-busy', 'true');
+  status.textContent = 'Preparing new CVs …';
+  try {
+    const entries = await Promise.all(group.people.map(async person => {
+      let bytes;
+      if (location.protocol === 'file:') {
+        const encoded = window.KNOWIT_CV_DATA?.[person.id];
+        if (!encoded) throw new Error('CV unavailable');
+        bytes = Uint8Array.from(atob(encoded), char => char.charCodeAt(0));
+      } else {
+        const response = await fetch(person.cv, { cache: 'no-store' });
+        if (!response.ok) throw new Error('CV unavailable');
+        bytes = new Uint8Array(await response.arrayBuffer());
+      }
+      if (bytes.length !== person.cvBytes) throw new Error('Incomplete CV');
+      return { name: person.cvName, bytes };
+    }));
+    const url = URL.createObjectURL(new Blob([additions.createZip(entries)], { type: 'application/zip' }));
+    const link = document.createElement('a');
+    link.href = url; link.download = `Knowit_New_CVs_${group.date}.zip`; link.hidden = true;
+    document.body.appendChild(link); link.click(); link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 60000);
+    status.textContent = `Download started: ${entries.length} ${entries.length === 1 ? 'CV' : 'CVs'} in one ZIP file.`;
+  } catch (error) {
+    status.textContent = 'We could not prepare all new CVs. Please try again or download each CV from its profile.';
+  } finally {
+    button.disabled = false;
+    button.removeAttribute('aria-busy');
+  }
+});
+
+// Refresh date-sensitive labels when a page is left open overnight.
+let displayedDay = additions.todayKey();
+function refreshAdditionDate() {
+  const day = additions.todayKey();
+  if (day !== displayedDay) {
+    displayedDay = day;
+    renderResults();
+    if (dialog.open) {
+      const person = state.consultants.find(item => item.id === state.profileId);
+      const badge = document.querySelector('#profile-content .added-badge');
+      if (person && badge) badge.innerHTML = `<span aria-hidden="true">●</span>${esc(additions.badgeLabel(person))}`;
+    }
+  }
+}
+document.addEventListener('visibilitychange', refreshAdditionDate);
+setInterval(refreshAdditionDate, 60000);
