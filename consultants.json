@@ -2258,5 +2258,423 @@
       "file": "Knoiwt_Jimmie_Ulenius_Senior_Software_Engineer.pdf",
       "location": "CV heading on first page"
     }
+  },
+  {
+    "id": "C26",
+    "slug": "muqaddas-muqaddas",
+    "name": "Muqaddas Muqaddas",
+    "role": "Senior Software Engineer",
+    "summary": "Software engineer with experience in Java, Kotlin, Spring Boot and Python. Has developed IKEA applications with React and TypeScript, cloud infrastructure on GCP, Terraform and CI/CD, combining test automation, event-driven integrations and production support.",
+    "tags": [
+      "Cloud",
+      "CI/CD",
+      "React",
+      "Postgres",
+      "Java",
+      "Terraform",
+      "GitHub Actions",
+      "AI/LLM knowledgeable",
+      "Typescript"
+    ],
+    "allTags": [
+      "Cloud",
+      "CI/CD",
+      "React",
+      "Postgres",
+      "Java",
+      "Terraform",
+      "GitHub Actions",
+      "AI/LLM knowledgeable",
+      "Typescript"
+    ],
+    "rfxSkills": [
+      {
+        "id": "cloud",
+        "name": "Cloud",
+        "evidence": "project"
+      },
+      {
+        "id": "cicd",
+        "name": "CI/CD",
+        "evidence": "project"
+      },
+      {
+        "id": "react",
+        "name": "React",
+        "evidence": "project"
+      },
+      {
+        "id": "postgres",
+        "name": "Postgres",
+        "evidence": "project"
+      },
+      {
+        "id": "java",
+        "name": "Java",
+        "evidence": "project"
+      },
+      {
+        "id": "terraform",
+        "name": "Terraform",
+        "evidence": "project"
+      },
+      {
+        "id": "gha",
+        "name": "GitHub Actions",
+        "evidence": "project"
+      },
+      {
+        "id": "ai",
+        "name": "AI/LLM knowledgeable",
+        "evidence": "project"
+      },
+      {
+        "id": "ts",
+        "name": "Typescript",
+        "evidence": "project"
+      }
+    ],
+    "clients": "IKEA, ResCom Building & Construction and Codes Cage",
+    "portrait": "portraits/muqaddas-muqaddas.jpg",
+    "cv": "cv/muqaddas-muqaddas.pdf",
+    "cvName": "Knoiwt_Muqaddas_Muqaddas_Senior_Software_Engineer.pdf",
+    "cvFormat": "PDF",
+    "cvBytes": 127598,
+    "availabilityMonth": "2026-11",
+    "availabilityLabel": "November 2026",
+    "availabilitySource": {
+      "source": "User confirmation",
+      "date": "2026-10-09"
+    },
+    "titleSource": {
+      "file": "Knoiwt_Muqaddas_Muqaddas_Senior_Software_Engineer.pdf",
+      "location": "CV heading on first page"
+    },
+    "competenceIds": [
+      "cloud",
+      "cicd",
+      "react",
+      "postgres",
+      "java",
+      "terraform",
+      "gha",
+      "ai",
+      "ts"
+    ],
+    "normallyExpertRate": false,
+    "requiredExpertRate": false,
+    "addedOn": "2026-10-09"
+  },
+  {
+    "id": "C27",
+    "slug": "max-barnell",
+    "name": "Max Barnell",
+    "role": "Senior Software Engineer",
+    "summary": "Software engineer with extensive IKEA product experience using React, TypeScript and Node.js. Works closely with UX/UI teams on accessible interfaces, component libraries and automated testing, with AWS, Azure and practical AI-assisted development experience.",
+    "tags": [
+      "Cloud",
+      "Azure services",
+      "React",
+      "Java",
+      "GitHub Actions",
+      "AI/LLM knowledgeable",
+      "Typescript"
+    ],
+    "allTags": [
+      "Cloud",
+      "Azure services",
+      "React",
+      "Java",
+      "GitHub Actions",
+      "AI/LLM knowledgeable",
+      "Typescript"
+    ],
+    "rfxSkills": [
+      {
+        "id": "cloud",
+        "name": "Cloud",
+        "evidence": "project"
+      },
+      {
+        "id": "az",
+        "name": "Azure services",
+        "evidence": "project"
+      },
+      {
+        "id": "react",
+        "name": "React",
+        "evidence": "project"
+      },
+      {
+        "id": "java",
+        "name": "Java",
+        "evidence": "project"
+      },
+      {
+        "id": "gha",
+        "name": "GitHub Actions",
+        "evidence": "project"
+      },
+      {
+        "id": "ai",
+        "name": "AI/LLM knowledgeable",
+        "evidence": "project"
+      },
+      {
+        "id": "ts",
+        "name": "Typescript",
+        "evidence": "project"
+      }
+    ],
+    "clients": "IKEA, Inter IKEA, Alten, Human IT and Bayou AB",
+    "portrait": "portraits/max-barnell.jpg",
+    "cv": "cv/max-barnell.pdf",
+    "cvName": "Knowit_Max_Barnell_Senior_Software_Enigneer.pdf",
+    "cvFormat": "PDF",
+    "cvBytes": 127686,
+    "availabilityMonth": "2026-11",
+    "availabilityLabel": "November 2026",
+    "availabilitySource": {
+      "source": "User confirmation",
+      "date": "2026-10-09"
+    },
+    "titleSource": {
+      "file": "Knowit_Max_Barnell_Senior_Software_Enigneer.pdf",
+      "location": "CV heading on first page"
+    },
+    "competenceIds": [
+      "cloud",
+      "az",
+      "react",
+      "java",
+      "gha",
+      "ai",
+      "ts"
+    ],
+    "normallyExpertRate": false,
+    "requiredExpertRate": false,
+    "addedOn": "2026-10-09"
+  },
+  {
+    "id": "C28",
+    "slug": "nicklas-shamlo",
+    "name": "Nicklas Shamlo",
+    "role": "Senior Software Engineer",
+    "summary": "Software engineer with broad experience in Java, TypeScript, Node.js, Swift and cloud services. Has contributed to IKEA’s kitchen planner and product-data processing, Yale’s connected-lock platform and Sony’s mobile applications and large-scale services.",
+    "tags": [
+      "Cloud",
+      "Java",
+      "Typescript"
+    ],
+    "allTags": [
+      "Cloud",
+      "Java",
+      "Typescript"
+    ],
+    "rfxSkills": [
+      {
+        "id": "cloud",
+        "name": "Cloud",
+        "evidence": "project"
+      },
+      {
+        "id": "java",
+        "name": "Java",
+        "evidence": "project"
+      },
+      {
+        "id": "ts",
+        "name": "Typescript",
+        "evidence": "project"
+      }
+    ],
+    "clients": "IKEA, Yale / ASSA ABLOY, Ericsson and Sony Mobile",
+    "portrait": "portraits/nicklas-shamlo.jpg",
+    "cv": "cv/nicklas-shamlo.pdf",
+    "cvName": "Knowit_Nicklas_Shamlo_Senior_Software_Engineer.pdf",
+    "cvFormat": "PDF",
+    "cvBytes": 137853,
+    "availabilityMonth": "2027-01",
+    "availabilityLabel": "January 2027",
+    "availabilitySource": {
+      "source": "User confirmation",
+      "date": "2026-10-09"
+    },
+    "titleSource": {
+      "file": "Knowit_Nicklas_Shamlo_Senior_Software_Engineer.pdf",
+      "location": "CV heading on first page"
+    },
+    "competenceIds": [
+      "cloud",
+      "java",
+      "ts"
+    ],
+    "normallyExpertRate": false,
+    "requiredExpertRate": false,
+    "addedOn": "2026-10-09"
+  },
+  {
+    "id": "C29",
+    "slug": "robert-holst",
+    "name": "Robert Holst",
+    "role": "Solution architect",
+    "summary": "Solution architect with experience leading architecture and development teams for IKEA planning tools and 3D asset pipelines. Combines AWS and Azure architecture, Terraform and CI/CD with practical machine-learning experience in LiDAR processing and classification.",
+    "tags": [
+      "Cloud",
+      "Azure services",
+      "CI/CD",
+      "Terraform",
+      "AI/LLM knowledgeable",
+      "Typescript"
+    ],
+    "allTags": [
+      "Cloud",
+      "Azure services",
+      "CI/CD",
+      "Terraform",
+      "AI/LLM knowledgeable",
+      "Typescript"
+    ],
+    "rfxSkills": [
+      {
+        "id": "cloud",
+        "name": "Cloud",
+        "evidence": "project"
+      },
+      {
+        "id": "az",
+        "name": "Azure services",
+        "evidence": "project"
+      },
+      {
+        "id": "cicd",
+        "name": "CI/CD",
+        "evidence": "project"
+      },
+      {
+        "id": "terraform",
+        "name": "Terraform",
+        "evidence": "project"
+      },
+      {
+        "id": "ai",
+        "name": "AI/LLM knowledgeable",
+        "evidence": "project"
+      },
+      {
+        "id": "ts",
+        "name": "Typescript",
+        "evidence": "mentioned"
+      }
+    ],
+    "clients": "IKEA, ADB Safegate and Aller Media",
+    "portrait": "portraits/robert-holst.jpg",
+    "cv": "cv/robert-holst.pdf",
+    "cvName": "Knowit_Robert_Holst_Solution_Architect_Expert.pdf",
+    "cvFormat": "PDF",
+    "cvBytes": 131798,
+    "availabilityMonth": "2027-01",
+    "availabilityLabel": "January 2027",
+    "availabilitySource": {
+      "source": "User confirmation",
+      "date": "2026-10-09"
+    },
+    "titleSource": {
+      "file": "Knowit_Robert_Holst_Solution_Architect_Expert.pdf",
+      "location": "CV heading on first page"
+    },
+    "competenceIds": [
+      "cloud",
+      "az",
+      "cicd",
+      "terraform",
+      "ai",
+      "ts"
+    ],
+    "normallyExpertRate": false,
+    "requiredExpertRate": false,
+    "addedOn": "2026-10-09"
+  },
+  {
+    "id": "C30",
+    "slug": "oskar-wingard",
+    "name": "Oskar Wingård",
+    "role": "Solution architect",
+    "summary": "Solution architect with experience designing and managing cloud-native solutions on Azure and AWS. Has led architecture for Inter IKEA’s 3D asset workflows and global kitchen-planner range management, combining continuous delivery, React, TypeScript and team leadership.",
+    "tags": [
+      "Cloud",
+      "Azure services",
+      "CI/CD",
+      "React",
+      "AI/LLM knowledgeable",
+      "Typescript"
+    ],
+    "allTags": [
+      "Cloud",
+      "Azure services",
+      "CI/CD",
+      "React",
+      "AI/LLM knowledgeable",
+      "Typescript"
+    ],
+    "rfxSkills": [
+      {
+        "id": "cloud",
+        "name": "Cloud",
+        "evidence": "project"
+      },
+      {
+        "id": "az",
+        "name": "Azure services",
+        "evidence": "project"
+      },
+      {
+        "id": "cicd",
+        "name": "CI/CD",
+        "evidence": "project"
+      },
+      {
+        "id": "react",
+        "name": "React",
+        "evidence": "project"
+      },
+      {
+        "id": "ai",
+        "name": "AI/LLM knowledgeable",
+        "evidence": "project"
+      },
+      {
+        "id": "ts",
+        "name": "Typescript",
+        "evidence": "project"
+      }
+    ],
+    "clients": "Inter IKEA, Minus tio, Agriprim, Sportarenan and Sapa",
+    "portrait": "portraits/oskar-wingard.jpg",
+    "cv": "cv/oskar-wingard.pdf",
+    "cvName": "Knowit_Oskar_Wingård_Solution_architect_Expert.pdf",
+    "cvFormat": "PDF",
+    "cvBytes": 150921,
+    "availabilityMonth": "2027-01",
+    "availabilityLabel": "January 2027",
+    "availabilitySource": {
+      "source": "User confirmation",
+      "date": "2026-10-09"
+    },
+    "titleSource": {
+      "file": "Knowit_Oskar_Wingård_Solution_architect_Expert.pdf",
+      "location": "CV heading on first page"
+    },
+    "competenceIds": [
+      "cloud",
+      "az",
+      "cicd",
+      "react",
+      "ai",
+      "ts"
+    ],
+    "normallyExpertRate": false,
+    "requiredExpertRate": false,
+    "addedOn": "2026-10-09"
   }
 ]
