@@ -7,9 +7,10 @@
   <meta name="description" content="Knowit consultants proposed for IKEA Range Operations. Explore profiles, filter by IKEA's required competences and download original CVs.">
   <title>Consultants for IKEA Range Operations · Knowit</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="knowit.css">
+  <link rel="stylesheet" href="knowit.css?v=b1dafa94098b">
   <script src="consultants.js?v=4f738d29832b" defer></script>
-  <script src="app.js" defer></script>
+  <script src="new-profiles.js?v=085c866ba2ce" defer></script>
+  <script src="app.js?v=8b726b8a12fd" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#consultant-grid">Skip to consultants</a>
@@ -26,7 +27,7 @@
       <div class="hero-copy">
         <p class="eyebrow">Knowit proposal</p>
         <h1 id="page-title">Consultants for<br>IKEA Range Operations.</h1>
-        <p class="hero-description">25 consultants for your next step. Explore their experience, check availability and download their original CVs.</p>
+        <p id="hero-description" class="hero-description">25 consultants for your next step. Explore their experience, check availability and download their original CVs.</p>
       </div>
       <aside class="collection-stats" aria-label="Number of consultants by availability month">
         <h2>Availability</h2>
@@ -40,6 +41,18 @@
         <h2 id="directory-title">Explore our consultants</h2>
         <a class="button button-primary download-all-cvs" href="Knowit_IKEA_All_CVs.zip" download="Knowit_IKEA_All_CVs.zip" data-all-cvs><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></svg><span>Download all CVs</span></a>
       </div>
+      <section id="new-profiles" class="new-profiles" aria-labelledby="new-profiles-title" hidden>
+        <div class="new-profiles-copy">
+          <span class="new-collection-label">Latest additions</span>
+          <h3 id="new-profiles-title">New profiles</h3>
+          <p id="new-profiles-description"></p>
+        </div>
+        <div class="new-profiles-actions">
+          <button id="show-new-profiles" class="button button-secondary" type="button" aria-pressed="false">View new profiles</button>
+          <button id="download-new-cvs" class="button button-purple" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></svg><span>Download new CVs</span></button>
+        </div>
+        <p id="new-download-status" class="new-download-status" role="status" aria-live="polite"></p>
+      </section>
       <div class="filters">
         <div class="filter-fields">
           <div class="search-field">
