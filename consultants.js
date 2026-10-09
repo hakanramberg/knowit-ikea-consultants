@@ -2593,7 +2593,7 @@ window.KNOWIT_CONSULTANTS = [
       "ts"
     ],
     "normallyExpertRate": false,
-    "requiredExpertRate": false,
+    "requiredExpertRate": true,
     "addedOn": "2026-10-09"
   },
   {
@@ -2675,7 +2675,7 @@ window.KNOWIT_CONSULTANTS = [
       "ts"
     ],
     "normallyExpertRate": false,
-    "requiredExpertRate": false,
+    "requiredExpertRate": true,
     "addedOn": "2026-10-09"
   }
 ];
