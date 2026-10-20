@@ -2059,7 +2059,7 @@ window.KNOWIT_CONSULTANTS = [
     "availabilityLabel": "January 2027",
     "availabilitySource": {
       "source": "User confirmation",
-      "date": "2026-10-06"
+      "date": "2026-10-20"
     },
     "normallyExpertRate": false,
     "requiredExpertRate": false,
@@ -2073,7 +2073,8 @@ window.KNOWIT_CONSULTANTS = [
       "file": "Knowit Fredrik Norrman Senior Software Engineer.pdf",
       "location": "CV heading at the top of the first page"
     },
-    "availabilityStatus": "unavailable"
+    "availabilityStatus": "available",
+    "availabilityDate": "2027-01-01"
   },
   {
     "id": "C24",
