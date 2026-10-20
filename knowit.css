@@ -166,3 +166,23 @@ dialog::backdrop{background:#0b0b268f;backdrop-filter:blur(3px)}
 .added-badge span{font-size:8px;color:#ddd2ff}
 #profile-content>.added-badge{margin-top:-8px;margin-bottom:21px}
 @media(max-width:720px){.new-profiles{padding:19px 17px;gap:17px;margin-bottom:17px}.new-profiles h3{font-size:23px}.new-profiles-actions{width:100%;flex-direction:column;gap:9px}.new-profiles-actions .button{width:100%}.added-badge{font-size:11px}}
+
+/* Availability status: keep unavailable profiles distinct and accessible. */
+.filter-fields{flex-wrap:wrap}.status-field{display:flex;gap:10px;align-items:center}.status-field label{font-size:12px;white-space:nowrap}
+.status-field select{border:1px solid #c9c0b9;background:var(--cream);padding:10px 12px;color:var(--ink);font-size:12px;min-height:44px;width:195px}
+.technology-field select{width:235px}
+.unavailable-badge{background:#f6e7e4;color:#843d36;border:1px solid #d8b4ad;gap:8px}
+.unavailable-badge strong{font-weight:500;margin:0}.unavailable-badge svg{color:#843d36}
+.consultant-card.is-unavailable{border-color:#d8b4ad;border-top:3px solid #a85a50;background:#fcf8f3}
+.consultant-card.is-unavailable:hover{background:#fffefa;border-color:#a85a50}
+.is-unavailable .portrait{filter:saturate(.35)}
+.unavailable-group{border-color:#d8b4ad;margin-top:40px;align-items:flex-start;justify-content:space-between}
+.unavailable-group h3{color:#843d36}.unavailable-group p{font-size:12px;color:var(--muted);margin:6px 0 3px;max-width:650px}
+.unavailable-group>span{padding-top:10px;white-space:nowrap}
+.unavailable-profile{background:#f6e7e4;border:1px solid #d8b4ad;align-items:flex-start;color:#843d36}
+.unavailable-profile>svg{color:#843d36;margin-top:4px}
+.unavailable-profile strong{font-size:20px}.unavailable-profile span{font-size:12px;line-height:1.65;color:#743e38;margin:5px 0 0}
+.unavailable-summary{border-top:1px solid #d8b4ad;margin-top:5px;padding-top:12px;color:#843d36}
+
+@media(max-width:1100px){.status-field{flex:1 1 100%}.status-field select{flex:1}.technology-field select{width:235px}}
+@media(max-width:720px){.status-field{width:100%;align-items:flex-start;flex-direction:column;gap:6px}.status-field select{width:100%}.technology-field select{width:100%}.unavailable-group h3{font-size:24px}.unavailable-group{gap:12px}.unavailable-group p{font-size:11px}}

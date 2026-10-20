@@ -2072,7 +2072,8 @@ window.KNOWIT_CONSULTANTS = [
     "titleSource": {
       "file": "Knowit Fredrik Norrman Senior Software Engineer.pdf",
       "location": "CV heading at the top of the first page"
-    }
+    },
+    "availabilityStatus": "unavailable"
   },
   {
     "id": "C24",

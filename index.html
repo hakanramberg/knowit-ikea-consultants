@@ -7,10 +7,10 @@
   <meta name="description" content="Knowit consultants proposed for IKEA Range Operations. Explore profiles, filter by IKEA's required competences and download original CVs.">
   <title>Consultants for IKEA Range Operations · Knowit</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="knowit.css?v=b1dafa94098b">
-  <script src="consultants.js?v=f0994c9ed419" defer></script>
+  <link rel="stylesheet" href="knowit.css?v=e2e550162da7">
+  <script src="consultants.js?v=aabd5167b98e" defer></script>
   <script src="new-profiles.js?v=93b8ddd22b1d" defer></script>
-  <script src="app.js?v=8b726b8a12fd" defer></script>
+  <script src="app.js?v=e3e06fc478d8" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#consultant-grid">Skip to consultants</a>
@@ -64,10 +64,14 @@
             <label for="technology">Required competence</label>
             <select id="technology"><option value="">All competences</option></select>
           </div>
+            <div class="status-field">
+            <label for="availability-status">Availability</label>
+            <select id="availability-status"><option value="">All statuses</option><option value="available">Available</option><option value="unavailable">No longer available</option></select>
+          </div>
         </div>
       </div>
       <div class="results-bar">
-        <div class="results-info"><p id="results-count" role="status" aria-live="polite">Loading consultants …</p><span class="sort-note">Earliest availability first</span></div>
+        <div class="results-info"><p id="results-count" role="status" aria-live="polite">Loading consultants …</p><span class="sort-note">Earliest availability first · Unavailable last</span></div>
         <button id="reset" class="reset-button" type="button" hidden>Clear filters <span aria-hidden="true">×</span></button>
       </div>
       <div id="consultant-grid" class="consultant-grid" tabindex="-1"></div>

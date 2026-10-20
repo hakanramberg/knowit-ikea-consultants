@@ -5,7 +5,7 @@ const icons = {
   arrow: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>',
   calendar: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4m8-4v4M4 10h16m-11 4h2m4 0h2m-8 3h2"/></svg>'
 };
-const state = { consultants: [], query: '', technology: '', onlyNew: false, newGroup: null };
+const state = { consultants: [], query: '', technology: '', onlyNew: false, availability: '', newGroup: null };
 const additions = window.KNOWIT_NEW_PROFILES;
 const search = document.querySelector('#search');
 const technology = document.querySelector('#technology');
@@ -32,11 +32,20 @@ function rateBadges(person) {
   return badges.length ? `<div class="rate-badges">${badges.join('')}</div>` : '';
 }
 
+function isUnavailable(person) { return person.availabilityStatus === 'unavailable'; }
+
+const unavailableIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg>';
+function availabilityBadge(person) {
+  return isUnavailable(person)
+    ? `<p class="availability-badge unavailable-badge">${unavailableIcon}<strong>No longer available</strong></p>`
+    : `<p class="availability-badge">${icons.calendar}<span>Available <strong>${esc(person.availabilityLabel)}</strong></span></p>`;
+}
+
 function card(person) {
-  return `<article class="consultant-card" data-id="${esc(person.id)}">
+  return `<article class="consultant-card${isUnavailable(person) ? ' is-unavailable' : ''}" data-id="${esc(person.id)}">
     ${addedBadge(person)}
     <div class="card-head">${portrait(person)}<div class="card-identity"><h3>${esc(person.name)}</h3><p class="role">${esc(person.role)}</p></div></div>
-    <p class="availability-badge">${icons.calendar}<span>Available <strong>${esc(person.availabilityLabel)}</strong></span></p>
+    ${availabilityBadge(person)}
     ${rateBadges(person)}
     <p class="card-summary">${esc(person.summary)}</p>
     <ul class="skill-tags" aria-label="IKEA RFX competences">${person.tags.map(tag => `<li>${esc(tag)}</li>`).join('')}</ul>
@@ -48,23 +57,28 @@ function renderResults() {
   renderNewProfiles();
   const queryTerms = normalize(state.query.trim()).split(/\s+/).filter(Boolean);
   const filtered = state.consultants.filter(person => {
+    if (state.availability === 'available' && isUnavailable(person)) return false;
+    if (state.availability === 'unavailable' && !isUnavailable(person)) return false;
     if (state.onlyNew && !state.newGroup?.people.some(item => item.id === person.id)) return false;
     if (state.technology && !person.competenceIds.includes(state.technology)) return false;
-    const text = normalize([person.name, person.role, person.clients, person.availabilityLabel].join(' '));
+    const text = normalize([person.name, person.role, person.clients, isUnavailable(person) ? 'No longer available' : person.availabilityLabel].join(' '));
     return queryTerms.every(term => text.includes(term));
   });
-  const months = [...new Set(filtered.map(person => person.availabilityMonth))];
+  const available = filtered.filter(person => !isUnavailable(person));
+  const unavailable = filtered.filter(isUnavailable);
+  const months = [...new Set(available.map(person => person.availabilityMonth))];
   grid.innerHTML = months.map(month => {
-    const group = filtered.filter(person => person.availabilityMonth === month);
+    const group = available.filter(person => person.availabilityMonth === month);
     return `<div class="availability-group"><h3>${esc(group[0].availabilityLabel)}</h3><span>${group.length} ${group.length === 1 ? 'consultant' : 'consultants'}</span></div>${group.map(card).join('')}`;
-  }).join('');
+  }).join('') + (unavailable.length ? `<div id="unavailable-group" class="availability-group unavailable-group"><div><h3>No longer available</h3><p>Profiles and CVs are kept here for reference.</p></div><span>${unavailable.length} ${unavailable.length === 1 ? 'consultant' : 'consultants'}</span></div>${unavailable.map(card).join('')}` : '');
   document.querySelector('#results-count').innerHTML = `Showing <strong>${filtered.length}</strong> of ${state.consultants.length} consultants`;
   document.querySelector('#empty-state').hidden = filtered.length > 0;
-  document.querySelector('#reset').hidden = !state.query && !state.technology && !state.onlyNew;
+  document.querySelector('#reset').hidden = !state.query && !state.technology && !state.onlyNew && !state.availability;
 }
 
 function resetFilters() {
-  state.query = ''; state.technology = ''; state.onlyNew = false;
+  state.query = ''; state.technology = ''; state.onlyNew = false; state.availability = '';
+  document.querySelector('#availability-status').value = '';
   search.value = ''; technology.value = '';
   renderResults();
 }
@@ -77,7 +91,9 @@ function openProfile(id) {
   document.querySelector('#profile-content').innerHTML = `
     <div class="profile-header">${portrait(person)}<div><h2 id="profile-name">${esc(person.name)}</h2><p class="role">${esc(person.role)}</p></div></div>
     ${addedBadge(person)}
-    <div class="profile-availability">${icons.calendar}<div><span>Available from</span><strong>${esc(person.availabilityLabel)}</strong></div></div>
+    ${isUnavailable(person)
+      ? `<div class="profile-availability unavailable-profile">${unavailableIcon}<div><strong>No longer available</strong><span>This consultant is no longer available for this proposal. The profile and CV are kept for reference.</span></div></div>`
+      : `<div class="profile-availability">${icons.calendar}<div><span>Available from</span><strong>${esc(person.availabilityLabel)}</strong></div></div>`}
     ${rateBadges(person)}
     <p class="profile-summary">${esc(person.summary)}</p>
     <section class="detail-section"><h3>IKEA RFX competences</h3><ul class="evidence-list">${person.rfxSkills.map(skill => `<li><i class="evidence-dot" aria-hidden="true"></i><span>${esc(skill.name)}</span></li>`).join('')}</ul></section>
@@ -140,11 +156,11 @@ async function init() {
     if (!Array.isArray(window.KNOWIT_CONSULTANTS) || !Array.isArray(window.KNOWIT_RFX_COMPETENCES)) throw new Error('Could not load profiles');
     state.consultants = [...window.KNOWIT_CONSULTANTS].sort((a, b) => a.availabilityMonth.localeCompare(b.availabilityMonth) || a.name.localeCompare(b.name, 'sv'));
     document.querySelector('#hero-description').textContent = `${state.consultants.length} consultants for your next step. Explore their experience, check availability and download their original CVs.`;
-    const months = [...new Set(state.consultants.map(person => person.availabilityMonth))];
+    const months = [...new Set(state.consultants.filter(person => !isUnavailable(person)).map(person => person.availabilityMonth))];
     document.querySelector('#availability-overview').innerHTML = months.map(month => {
-      const group = state.consultants.filter(person => person.availabilityMonth === month);
+      const group = state.consultants.filter(person => !isUnavailable(person) && person.availabilityMonth === month);
       return `<div class="availability-summary-item"><strong>${group.length}</strong><span>${esc(group[0].availabilityLabel)}</span></div>`;
-    }).join('');
+    }).join('') + (state.consultants.some(isUnavailable) ? `<div class="availability-summary-item unavailable-summary"><strong>${state.consultants.filter(isUnavailable).length}</strong><span>No longer available</span></div>` : '');
     technology.innerHTML += window.KNOWIT_RFX_COMPETENCES.map(skill => `<option value="${esc(skill.id)}">${esc(skill.label)} (${state.consultants.filter(person => person.competenceIds.includes(skill.id)).length})</option>`).join('');
     renderResults();
   } catch (error) {
@@ -152,7 +168,6 @@ async function init() {
     grid.innerHTML = '<p class="error-message">We could not load the profiles. Reload the page to try again.</p>';
   }
 }
-init();
 
 function addedBadge(person) {
   const label = additions.badgeLabel(person);
@@ -232,3 +247,9 @@ function refreshAdditionDate() {
 }
 document.addEventListener('visibilitychange', refreshAdditionDate);
 setInterval(refreshAdditionDate, 60000);
+
+document.querySelector('#availability-status').addEventListener('change', event => {
+  state.availability = event.target.value;
+  renderResults();
+});
+init();
