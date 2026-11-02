@@ -267,7 +267,8 @@
       "ai"
     ],
     "normallyExpertRate": false,
-    "requiredExpertRate": false
+    "requiredExpertRate": false,
+    "availabilityStatus": "unavailable"
   },
   {
     "id": "C06",
@@ -341,7 +342,8 @@
       "java"
     ],
     "normallyExpertRate": false,
-    "requiredExpertRate": false
+    "requiredExpertRate": false,
+    "availabilityStatus": "unavailable"
   },
   {
     "id": "C07",
@@ -757,7 +759,8 @@
       "cells": [
         "E7"
       ]
-    }
+    },
+    "availabilityStatus": "unavailable"
   },
   {
     "id": "C17",
@@ -945,7 +948,8 @@
       "ai"
     ],
     "normallyExpertRate": false,
-    "requiredExpertRate": false
+    "requiredExpertRate": false,
+    "availabilityStatus": "unavailable"
   },
   {
     "id": "C21",
@@ -1279,7 +1283,8 @@
       "cells": [
         "E17"
       ]
-    }
+    },
+    "availabilityStatus": "unavailable"
   },
   {
     "id": "C13",
@@ -2072,7 +2077,7 @@
       "file": "Knowit Fredrik Norrman Senior Software Engineer.pdf",
       "location": "CV heading at the top of the first page"
     },
-    "availabilityStatus": "available",
+    "availabilityStatus": "unavailable",
     "availabilityDate": "2027-01-01"
   },
   {
@@ -2170,7 +2175,8 @@
     "titleSource": {
       "file": "Knowit_Nina_Kristensson_Senior_Software_Engineer_Jan.pdf",
       "location": "CV heading on first page"
-    }
+    },
+    "availabilityStatus": "unavailable"
   },
   {
     "id": "C25",
@@ -3020,5 +3026,203 @@
     "normallyExpertRate": false,
     "requiredExpertRate": true,
     "addedOn": "2026-10-09"
+  },
+  {
+    "id": "C34",
+    "slug": "adnan-ali",
+    "name": "Adnan Ali",
+    "role": "Senior Software Engineer",
+    "summary": "Software engineer with experience in C#, .NET, Microsoft Azure and distributed systems. Has developed IKEA Cart and Checkout services, e-commerce integrations and event-driven microservices, combining CI/CD automation, monitoring and AI-assisted development with GitHub Copilot.",
+    "tags": [
+      "Cloud",
+      "Azure services",
+      "CI/CD",
+      "React",
+      ".NET",
+      "Postgres",
+      "GitHub Actions",
+      "AI/LLM knowledgeable"
+    ],
+    "allTags": [
+      "Cloud",
+      "Azure services",
+      "CI/CD",
+      "React",
+      ".NET",
+      "Postgres",
+      "GitHub Actions",
+      "AI/LLM knowledgeable"
+    ],
+    "rfxSkills": [
+      {
+        "id": "cloud",
+        "name": "Cloud",
+        "evidence": "project"
+      },
+      {
+        "id": "az",
+        "name": "Azure services",
+        "evidence": "project"
+      },
+      {
+        "id": "cicd",
+        "name": "CI/CD",
+        "evidence": "project"
+      },
+      {
+        "id": "react",
+        "name": "React",
+        "evidence": "project"
+      },
+      {
+        "id": "net",
+        "name": ".NET",
+        "evidence": "project"
+      },
+      {
+        "id": "postgres",
+        "name": "Postgres",
+        "evidence": "project"
+      },
+      {
+        "id": "gha",
+        "name": "GitHub Actions",
+        "evidence": "project"
+      },
+      {
+        "id": "ai",
+        "name": "AI/LLM knowledgeable",
+        "evidence": "project"
+      }
+    ],
+    "clients": "IKEA, Culligan, Netigate, Lime Technologies and Siemens",
+    "portrait": "portraits/adnan-ali.jpg",
+    "cv": "cv/adnan-ali.pdf",
+    "cvName": "Knowit_Adnan_Ali_Senior_Software_Engineer IKEA RFX.pdf",
+    "cvFormat": "PDF",
+    "cvBytes": 224673,
+    "availabilityMonth": "2026-11",
+    "availabilityLabel": "November 2026",
+    "availabilityStatus": "available",
+    "availabilitySource": {
+      "source": "User confirmation",
+      "date": "2026-11-02"
+    },
+    "titleSource": {
+      "file": "Knowit_Adnan_Ali_Senior_Software_Engineer IKEA RFX.pdf",
+      "location": "CV heading at the beginning of the document"
+    },
+    "competenceIds": [
+      "cloud",
+      "az",
+      "cicd",
+      "react",
+      "net",
+      "postgres",
+      "gha",
+      "ai"
+    ],
+    "normallyExpertRate": false,
+    "requiredExpertRate": false,
+    "addedOn": "2026-11-02"
+  },
+  {
+    "id": "C35",
+    "slug": "ludwig-nord",
+    "name": "Ludwig Nord",
+    "role": "Fullstack Developer",
+    "summary": "Software engineer working with C#/.NET, React, TypeScript and cloud platforms. Has developed an enterprise AI platform for Alfa Laval using Azure, LLMs, RAG and MCP, alongside payment platforms, integrations and microservices for Worldline and RiksTV.",
+    "tags": [
+      "Cloud",
+      "Azure services",
+      "CI/CD",
+      "React",
+      ".NET",
+      "Postgres",
+      "AI/LLM knowledgeable",
+      "Typescript"
+    ],
+    "allTags": [
+      "Cloud",
+      "Azure services",
+      "CI/CD",
+      "React",
+      ".NET",
+      "Postgres",
+      "AI/LLM knowledgeable",
+      "Typescript"
+    ],
+    "rfxSkills": [
+      {
+        "id": "cloud",
+        "name": "Cloud",
+        "evidence": "project"
+      },
+      {
+        "id": "az",
+        "name": "Azure services",
+        "evidence": "project"
+      },
+      {
+        "id": "cicd",
+        "name": "CI/CD",
+        "evidence": "project"
+      },
+      {
+        "id": "react",
+        "name": "React",
+        "evidence": "project"
+      },
+      {
+        "id": "net",
+        "name": ".NET",
+        "evidence": "project"
+      },
+      {
+        "id": "postgres",
+        "name": "Postgres",
+        "evidence": "project"
+      },
+      {
+        "id": "ai",
+        "name": "AI/LLM knowledgeable",
+        "evidence": "project"
+      },
+      {
+        "id": "ts",
+        "name": "Typescript",
+        "evidence": "project"
+      }
+    ],
+    "clients": "Alfa Laval, Region Stockholm, RiksTV and Worldline",
+    "portrait": "portraits/ludwig-nord.png",
+    "cv": "cv/ludwig-nord.docx",
+    "cvName": "Ludwig_Nord_Knowit_IKEA_CV.docx",
+    "cvFormat": "DOCX",
+    "cvBytes": 5481501,
+    "availabilityMonth": "2026-11",
+    "availabilityLabel": "November 2026",
+    "availabilityStatus": "available",
+    "availabilitySource": {
+      "source": "User confirmation",
+      "date": "2026-11-02"
+    },
+    "titleSource": {
+      "file": "Ludwig_Nord_Knowit_IKEA_CV.docx",
+      "location": "CV heading at the beginning of the document"
+    },
+    "competenceIds": [
+      "cloud",
+      "az",
+      "cicd",
+      "react",
+      "net",
+      "postgres",
+      "ai",
+      "ts"
+    ],
+    "normallyExpertRate": false,
+    "requiredExpertRate": false,
+    "addedOn": "2026-11-02"
   }
 ]
