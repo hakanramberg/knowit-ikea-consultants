@@ -3134,7 +3134,7 @@
     "id": "C35",
     "slug": "ludwig-nord",
     "name": "Ludwig Nord",
-    "role": "Fullstack Developer",
+    "role": "Senior Software engineer",
     "summary": "Software engineer working with C#/.NET, React, TypeScript and cloud platforms. Has developed an enterprise AI platform for Alfa Laval using Azure, LLMs, RAG and MCP, alongside payment platforms, integrations and microservices for Worldline and RiksTV.",
     "tags": [
       "Cloud",
@@ -3212,8 +3212,8 @@
       "date": "2026-11-02"
     },
     "titleSource": {
-      "file": "Ludwig_Nord_Knowit_IKEA_CV.docx",
-      "location": "CV heading at the beginning of the document"
+      "source": "User confirmation",
+      "date": "2026-11-02"
     },
     "competenceIds": [
       "cloud",
