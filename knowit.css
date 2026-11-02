@@ -186,3 +186,10 @@ dialog::backdrop{background:#0b0b268f;backdrop-filter:blur(3px)}
 
 @media(max-width:1100px){.status-field{flex:1 1 100%}.status-field select{flex:1}.technology-field select{width:235px}}
 @media(max-width:720px){.status-field{width:100%;align-items:flex-start;flex-direction:column;gap:6px}.status-field select{width:100%}.technology-field select{width:100%}.unavailable-group h3{font-size:24px}.unavailable-group{gap:12px}.unavailable-group p{font-size:11px}}
+
+/* Unavailable subgroups retain the parent availability status. */
+.unavailable-subgroup{grid-column:1/-1;display:flex;align-items:center;gap:15px;padding:5px 0 5px 14px;margin:7px 0 0;border-left:3px solid #b9a49c}
+.unavailable-subgroup.assigned-ikea{border-color:var(--purple)}
+.unavailable-subgroup h4{margin:0;font-size:21px;line-height:1.3;font-weight:400;letter-spacing:-.3px}
+.unavailable-subgroup>span{font-size:12px;color:var(--muted);white-space:nowrap}
+@media(max-width:720px){.unavailable-subgroup h4{font-size:19px}.unavailable-subgroup{gap:12px}.unavailable-subgroup>span{font-size:11px}}

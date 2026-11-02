@@ -269,7 +269,8 @@ window.KNOWIT_CONSULTANTS = [
     ],
     "normallyExpertRate": false,
     "requiredExpertRate": false,
-    "availabilityStatus": "unavailable"
+    "availabilityStatus": "unavailable",
+    "assignedBy": "IKEA"
   },
   {
     "id": "C06",
@@ -761,7 +762,8 @@ window.KNOWIT_CONSULTANTS = [
         "E7"
       ]
     },
-    "availabilityStatus": "unavailable"
+    "availabilityStatus": "unavailable",
+    "assignedBy": "IKEA"
   },
   {
     "id": "C17",
@@ -2079,7 +2081,8 @@ window.KNOWIT_CONSULTANTS = [
       "location": "CV heading at the top of the first page"
     },
     "availabilityStatus": "unavailable",
-    "availabilityDate": "2027-01-01"
+    "availabilityDate": "2027-01-01",
+    "assignedBy": "IKEA"
   },
   {
     "id": "C24",
@@ -2177,7 +2180,8 @@ window.KNOWIT_CONSULTANTS = [
       "file": "Knowit_Nina_Kristensson_Senior_Software_Engineer_Jan.pdf",
       "location": "CV heading on first page"
     },
-    "availabilityStatus": "unavailable"
+    "availabilityStatus": "unavailable",
+    "assignedBy": "IKEA"
   },
   {
     "id": "C25",

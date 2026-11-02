@@ -23,3 +23,6 @@ Set `"availabilityStatus": "unavailable"` on the relevant consultant in both `co
 Unavailable consultants appear in a separate group at the end of the list, with a muted red **No longer available** badge on the card and in the profile. The Availability filter supports all statuses, available consultants and unavailable consultants, together with the existing search, competence and latest-addition filters. Unavailable consultants are excluded from the available month totals and counted separately.
 
 Their profiles, original CVs, rate badges and submission dates are retained. **Download all CVs** and **Download new CVs** continue to contain the complete collection and latest submission batch respectively, including unavailable consultants for reference. There are no demonstration controls in the published site.
+
+
+An unavailable consultant with `"assignedBy": "IKEA"` is grouped under **Assigned by IKEA**, below **No longer available**. Other unavailable consultants remain in a separate subgroup when both kinds are shown. Availability filters and totals still treat both subgroups as unavailable. The assignment is also shown in the consultant profile.

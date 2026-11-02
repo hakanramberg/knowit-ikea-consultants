@@ -53,6 +53,16 @@ function card(person) {
   </article>`;
 }
 
+function renderUnavailableGroups(people) {
+  if (!people.length) return '';
+  const assigned = people.filter(person => person.assignedBy === 'IKEA');
+  const other = people.filter(person => person.assignedBy !== 'IKEA');
+  const heading = (title, group, id, ikea = false) => `<div id="${id}" class="unavailable-subgroup${ikea ? ' assigned-ikea' : ''}"><h4>${title}</h4><span>${group.length} ${group.length === 1 ? 'consultant' : 'consultants'}</span></div>`;
+  return `<div id="unavailable-group" class="availability-group unavailable-group"><div><h3>No longer available</h3><p>Profiles and CVs are kept here for reference.</p></div><span>${people.length} ${people.length === 1 ? 'consultant' : 'consultants'}</span></div>`
+    + (assigned.length ? heading('Assigned by IKEA', assigned, 'assigned-by-ikea', true) + assigned.map(card).join('') : '')
+    + (other.length ? (assigned.length ? heading('Other unavailable consultants', other, 'other-unavailable') : '') + other.map(card).join('') : '');
+}
+
 function renderResults() {
   renderNewProfiles();
   const queryTerms = normalize(state.query.trim()).split(/\s+/).filter(Boolean);
@@ -70,7 +80,7 @@ function renderResults() {
   grid.innerHTML = months.map(month => {
     const group = available.filter(person => person.availabilityMonth === month);
     return `<div class="availability-group"><h3>${esc(group[0].availabilityLabel)}</h3><span>${group.length} ${group.length === 1 ? 'consultant' : 'consultants'}</span></div>${group.map(card).join('')}`;
-  }).join('') + (unavailable.length ? `<div id="unavailable-group" class="availability-group unavailable-group"><div><h3>No longer available</h3><p>Profiles and CVs are kept here for reference.</p></div><span>${unavailable.length} ${unavailable.length === 1 ? 'consultant' : 'consultants'}</span></div>${unavailable.map(card).join('')}` : '');
+  }).join('') + renderUnavailableGroups(unavailable);
   document.querySelector('#results-count').innerHTML = `Showing <strong>${filtered.length}</strong> of ${state.consultants.length} consultants`;
   document.querySelector('#empty-state').hidden = filtered.length > 0;
   document.querySelector('#reset').hidden = !state.query && !state.technology && !state.onlyNew && !state.availability;
@@ -92,7 +102,7 @@ function openProfile(id) {
     <div class="profile-header">${portrait(person)}<div><h2 id="profile-name">${esc(person.name)}</h2><p class="role">${esc(person.role)}</p></div></div>
     ${addedBadge(person)}
     ${isUnavailable(person)
-      ? `<div class="profile-availability unavailable-profile">${unavailableIcon}<div><strong>No longer available</strong><span>This consultant is no longer available for this proposal. The profile and CV are kept for reference.</span></div></div>`
+      ? `<div class="profile-availability unavailable-profile">${unavailableIcon}<div><strong>No longer available</strong><span>${person.assignedBy === 'IKEA' ? 'Assigned by IKEA.' : 'This consultant is no longer available for this proposal.'} The profile and CV are kept for reference.</span></div></div>`
       : `<div class="profile-availability">${icons.calendar}<div><span>Available from</span><strong>${esc(person.availabilityLabel)}</strong></div></div>`}
     ${rateBadges(person)}
     <p class="profile-summary">${esc(person.summary)}</p>
