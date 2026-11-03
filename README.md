@@ -1,6 +1,6 @@
 # Knowit proposal for IKEA Range Operations
 
-Static consultant presentation with 35 profiles, 35 portraits and 35 original CVs. The site includes availability, the requested competence filters, expert rate badges, individual CV downloads and a ZIP download of all CVs.
+Static consultant presentation with 36 profiles, 36 portraits and 36 original CVs. The site includes availability, the requested competence filters, expert rate badges, individual CV downloads and a ZIP download of all CVs.
 
 ## GitHub Pages
 

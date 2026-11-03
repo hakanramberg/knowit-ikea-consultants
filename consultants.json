@@ -3228,5 +3228,104 @@
     "normallyExpertRate": false,
     "requiredExpertRate": false,
     "addedOn": "2026-11-02"
+  },
+  {
+    "id": "C36",
+    "slug": "felix-alhbin",
+    "name": "Felix Alhbin",
+    "role": "Senior Software Engineer",
+    "summary": "Software engineer with extensive .NET, Azure and business-critical systems experience. Has developed IKEA Sales API and My Pages services, alongside retail and CRM integrations, combining reliable APIs, technical leadership and practical AI-agent workflows.",
+    "tags": [
+      "Cloud",
+      "Azure services",
+      "CI/CD",
+      "React",
+      ".NET",
+      "Postgres",
+      "AI/LLM knowledgeable",
+      "Typescript"
+    ],
+    "allTags": [
+      "Cloud",
+      "Azure services",
+      "CI/CD",
+      "React",
+      ".NET",
+      "Postgres",
+      "AI/LLM knowledgeable",
+      "Typescript"
+    ],
+    "rfxSkills": [
+      {
+        "id": "cloud",
+        "name": "Cloud",
+        "evidence": "project"
+      },
+      {
+        "id": "az",
+        "name": "Azure services",
+        "evidence": "project"
+      },
+      {
+        "id": "cicd",
+        "name": "CI/CD",
+        "evidence": "project"
+      },
+      {
+        "id": "react",
+        "name": "React",
+        "evidence": "project"
+      },
+      {
+        "id": "net",
+        "name": ".NET",
+        "evidence": "project"
+      },
+      {
+        "id": "postgres",
+        "name": "Postgres",
+        "evidence": "project"
+      },
+      {
+        "id": "ai",
+        "name": "AI/LLM knowledgeable",
+        "evidence": "project"
+      },
+      {
+        "id": "ts",
+        "name": "Typescript",
+        "evidence": "project"
+      }
+    ],
+    "clients": "IKEA, CDON, Trygg-Hansa and Stratiteq",
+    "portrait": "portraits/felix-alhbin.png",
+    "cv": "cv/felix-alhbin.pdf",
+    "cvName": "Knowit_Felix_Alhbin_Senior_Software_Engineer_IKEA_RFX.pdf",
+    "cvFormat": "PDF",
+    "cvBytes": 804707,
+    "availabilityMonth": "2026-12",
+    "availabilityLabel": "December 2026",
+    "availabilityStatus": "available",
+    "availabilitySource": {
+      "source": "User confirmation",
+      "date": "2026-11-03"
+    },
+    "titleSource": {
+      "file": "Knowit_Felix_Alhbin_Senior_Software_Engineer_IKEA_RFX.pdf",
+      "location": "CV heading at the top of the first page"
+    },
+    "competenceIds": [
+      "cloud",
+      "az",
+      "cicd",
+      "react",
+      "net",
+      "postgres",
+      "ai",
+      "ts"
+    ],
+    "normallyExpertRate": false,
+    "requiredExpertRate": false,
+    "addedOn": "2026-11-03"
   }
 ]
