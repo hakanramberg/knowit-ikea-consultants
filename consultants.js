@@ -2787,11 +2787,11 @@ window.KNOWIT_CONSULTANTS = [
     "cvName": "Knowit_Hesam_Rasouli_Senior_Software_Engineer_Jan.pdf",
     "cvFormat": "PDF",
     "cvBytes": 151324,
-    "availabilityMonth": "2027-01",
-    "availabilityLabel": "January 2027",
+    "availabilityMonth": "2026-12",
+    "availabilityLabel": "December 2026",
     "availabilitySource": {
       "source": "User confirmation",
-      "date": "2026-10-09"
+      "date": "2026-11-06"
     },
     "titleSource": {
       "file": "Knowit_Hesam_Rasouli_Senior_Software_Engineer_Jan.pdf",
