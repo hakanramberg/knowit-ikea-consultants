@@ -861,7 +861,9 @@ window.KNOWIT_CONSULTANTS = [
       "ts"
     ],
     "normallyExpertRate": false,
-    "requiredExpertRate": false
+    "requiredExpertRate": false,
+    "availabilityStatus": "unavailable",
+    "assignedBy": "IKEA"
   },
   {
     "id": "C20",
@@ -3306,7 +3308,7 @@ window.KNOWIT_CONSULTANTS = [
     "cvBytes": 804707,
     "availabilityMonth": "2026-12",
     "availabilityLabel": "December 2026",
-    "availabilityStatus": "available",
+    "availabilityStatus": "unavailable",
     "availabilitySource": {
       "source": "User confirmation",
       "date": "2026-11-03"
@@ -3327,6 +3329,7 @@ window.KNOWIT_CONSULTANTS = [
     ],
     "normallyExpertRate": false,
     "requiredExpertRate": false,
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "assignedBy": "IKEA"
   }
 ];
