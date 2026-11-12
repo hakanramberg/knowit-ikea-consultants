@@ -2272,7 +2272,8 @@ window.KNOWIT_CONSULTANTS = [
     "titleSource": {
       "file": "Knoiwt_Jimmie_Ulenius_Senior_Software_Engineer.pdf",
       "location": "CV heading on first page"
-    }
+    },
+    "availabilityStatus": "unavailable"
   },
   {
     "id": "C26",
